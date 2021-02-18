@@ -1,16 +1,30 @@
-// var carIcon =  document.querySelector('.car');
+var carIcon = document.querySelector('img');
 
 // var carDirection = [
 //   {
-//   direction: 'left'
+//     direction: 'left'
 //   },
 //   {
-//   direction: 'right'
+//     direction: 'right'
 //   },
 //   {
-//   direction: 'up'
+//     direction: 'up'
 //   },
 //   {
-//   direction: 'down'
+//     direction: 'down'
 //   }
-// ]
+// ];
+
+document.addEventListener('keydown', turnCar);
+
+function turnCar(event) {
+  if (event.code === 'ArrowLeft') {
+    carIcon.className = 'left car';
+  } else if (event.code === 'ArrowRight') {
+    carIcon.className = 'left right car';
+  } else if (event.code === 'ArrowDown') {
+    carIcon.className = 'down car';
+  } else if (event.code === 'ArrowUp') {
+    carIcon.className = 'up car';
+  }
+}

@@ -9,17 +9,17 @@
 }
 
 .left {
-  transform: rotate(-0.25);
+  transform: rotate(-0.5turn);
 }
 
 .right {
-  transform: rotate(0.25);
+  transform: rotate(0turn);
 }
 
 .up {
-  transform: rotate(-0.5);
+  transform: rotate(-0.25turn);
 }
 
 .down {
-  transform: rotate(0.5);
+  transform: rotate(0.25turn);
 }
