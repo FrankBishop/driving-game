@@ -7,3 +7,19 @@
   width: 25vh;
   height: 25vh;
 }
+
+.left {
+  transform: rotate(-0.25);
+}
+
+.right {
+  transform: rotate(0.25);
+}
+
+.up {
+  transform: rotate(-0.5);
+}
+
+.down {
+  transform: rotate(0.5);
+}
