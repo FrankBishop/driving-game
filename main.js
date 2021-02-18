@@ -21,7 +21,7 @@ function turnCar(event) {
   if (event.code === 'ArrowLeft') {
     carIcon.className = 'left car';
   } else if (event.code === 'ArrowRight') {
-    carIcon.className = 'left right car';
+    carIcon.className = 'right car';
   } else if (event.code === 'ArrowDown') {
     carIcon.className = 'down car';
   } else if (event.code === 'ArrowUp') {
