@@ -1,0 +1,9 @@
+.course {
+  height: 100vh;
+  background-color: green;
+}
+
+.car > img {
+  width: 25vh;
+  height: 25vh;
+}
