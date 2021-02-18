@@ -1,6 +1,11 @@
 .course {
   height: 100vh;
   background-color: green;
+  position: relative;
+}
+
+.car {
+  position: absolute;
 }
 
 .car > img {
