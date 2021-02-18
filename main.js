@@ -2,16 +2,20 @@ var carIcon = document.querySelector('img');
 
 // var carDirection = [
 //   {
-//     direction: 'left'
+//     direction: 'left',
+//     localtion: ''
 //   },
 //   {
-//     direction: 'right'
+//     direction: 'right',
+//     localtion: ''
 //   },
 //   {
-//     direction: 'up'
+//     direction: 'up',
+//     localtion: ''
 //   },
 //   {
-//     direction: 'down'
+//     direction: 'down',
+//     localtion: ''
 //   }
 // ];
 
