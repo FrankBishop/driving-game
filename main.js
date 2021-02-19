@@ -3,6 +3,29 @@ var i = 0;
 
 document.addEventListener('keydown', turnCar);
 
+// var carDirection = [
+//   {
+//     direction: 'left',
+//     localtion: '',
+//     stop: false
+//   },
+//   {
+//     direction: 'right',
+//     localtion: '',
+//     stop: false
+//   },
+//   {
+//     direction: 'up',
+//     localtion: '',
+//     stop: false
+//   },
+//   {
+//     direction: 'down',
+//     localtion: '',
+//     stop: false
+//   }
+// ];
+
 function turnCar(event) {
   if (event.code === 'ArrowLeft') {
     carIcon.className = 'left car';
