@@ -1,19 +1,5 @@
 var carIcon = document.querySelector('img');
-
-// var carDirection = [
-//   {
-//     direction: 'left'
-//   },
-//   {
-//     direction: 'right'
-//   },
-//   {
-//     direction: 'up'
-//   },
-//   {
-//     direction: 'down'
-//   }
-// ];
+var i = 0;
 
 document.addEventListener('keydown', turnCar);
 
@@ -26,5 +12,15 @@ function turnCar(event) {
     carIcon.className = 'down car';
   } else if (event.code === 'ArrowUp') {
     carIcon.className = 'up car';
+  } else if (event.code === 'Space') {
+    carIcon.style.position = 'absolute';
+    carIcon.style.left = 'px';
+    setInterval(moveAcross, 16);
   }
+}
+
+function moveAcross() {
+  i += 3;
+  var increment = i + 'px';
+  carIcon.style.left = increment;
 }
