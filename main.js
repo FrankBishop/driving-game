@@ -1,30 +1,7 @@
 var carIcon = document.querySelector('img');
 var i = 0;
-
+var interval = null;
 document.addEventListener('keydown', turnCar);
-
-// var carDirection = [
-//   {
-//     direction: 'left',
-//     localtion: '',
-//     stop: false
-//   },
-//   {
-//     direction: 'right',
-//     localtion: '',
-//     stop: false
-//   },
-//   {
-//     direction: 'up',
-//     localtion: '',
-//     stop: false
-//   },
-//   {
-//     direction: 'down',
-//     localtion: '',
-//     stop: false
-//   }
-// ];
 
 function turnCar(event) {
   if (event.code === 'ArrowLeft') {
@@ -38,7 +15,7 @@ function turnCar(event) {
   } else if (event.code === 'Space') {
     carIcon.style.position = 'absolute';
     carIcon.style.left = 'px';
-    setInterval(moveAcross, 16);
+    interval = setInterval(moveAcross, 16);
   }
 }
 
@@ -46,4 +23,11 @@ function moveAcross() {
   i += 3;
   var increment = i + 'px';
   carIcon.style.left = increment;
+  document.removeEventListener('keydown', turnCar);
+  document.addEventListener('keydown', stopCar);
+}
+
+function stopCar(event) {
+  clearInterval(interval);
+  document.addEventListener('keydown', turnCar);
 }
