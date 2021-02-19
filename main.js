@@ -1,25 +1,6 @@
 var carIcon = document.querySelector('img');
 var i = 0;
 
-// var carDirection = [
-//   {
-//     direction: 'left',
-//     localtion: ''
-//   },
-//   {
-//     direction: 'right',
-//     localtion: ''
-//   },
-//   {
-//     direction: 'up',
-//     localtion: ''
-//   },
-//   {
-//     direction: 'down',
-//     localtion: ''
-//   }
-// ];
-
 document.addEventListener('keydown', turnCar);
 
 function turnCar(event) {
